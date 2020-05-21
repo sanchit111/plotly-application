@@ -18,24 +18,20 @@ const Plot = createPlotlyComponent(Plotly);
 
 
 
-class Bar extends Component {
+class Heat_Map extends Component {
   render() {
     return (
       <Plot className="plot"
         data={[
           {
-           type: 'bar',
-           x: [10, 30, 50, 70, 90],
-           y: ['A', 'B', 'C', 'D', 'E'],
-           orientation: 'h',
-            // color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)',  'rgb(44, 160, 101)'],
-              },
-          
+    z: [[1, 20, 30], [20, 1, 60], [30, 60, 1]],
+    type: 'heatmap'
+  },
         ]}
-        layout={ {width: 750, height: 520, title: 'Bar'} }
+        layout={ {width: 750, height: 520, title: 'Heat Map'} }
       />
     );
   }
 }
 
-export default Bar;
+export default Heat_Map;

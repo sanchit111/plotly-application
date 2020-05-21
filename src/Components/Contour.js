@@ -18,24 +18,28 @@ const Plot = createPlotlyComponent(Plotly);
 
 
 
-class Bar extends Component {
+class Contour extends Component {
   render() {
     return (
       <Plot className="plot"
         data={[
           {
-           type: 'bar',
-           x: [10, 30, 50, 70, 90],
-           y: ['A', 'B', 'C', 'D', 'E'],
-           orientation: 'h',
-            // color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)',  'rgb(44, 160, 101)'],
-              },
+  z: [[10, 10.625, 12.5, 15.625, 20],
+       [5.625, 6.25, 8.125, 11.25, 15.625],
+       [2.5, 3.125, 5., 8.125, 12.5],
+       [0.625, 1.25, 3.125, 6.25, 10.625],
+       [0, 0.625, 2.5, 5.625, 10]],
+  x: [-9, -6, -5 , -3, -1],
+  y: [0, 1, 4, 5, 7],
+  type: 'contour'
+},
+
           
         ]}
-        layout={ {width: 750, height: 520, title: 'Bar'} }
+        layout={ {width: 750, height: 520, title: 'Contour Map'} }
       />
     );
   }
 }
 
-export default Bar;
+export default Contour;

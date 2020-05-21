@@ -17,42 +17,42 @@ const Plot = createPlotlyComponent(Plotly);
 
 
 
-class Area extends Component {
+class Filled_Area_Plot extends Component {
   render() {
     return (
       <div>
       <Plot className="plot"
         data={[
-         {
-              x: [1, 2, 3, 4],
-              y: [0, 2, 3, 5],
-              fill: "tozeroy",
-              type: "scatter"
-            },
-            {
-              x: [1, 2, 3, 4],
-              y: [3, 5, 1, 7],
-              fill: "tonexty",
-              type: "scatter"
-            }
-        ]}
-        layout={ {width: 750, height: 520, title: 'Area Chart'} }
-      />
+       {
+             x: [1, 2, 3, 4],
+             y: [0, 2, 3, 5],
+             fill: 'tozeroy',
+             type: 'scatter'
+       },
 
-       <table id="data" class="table table-bordered">
+       {
+          x: [1, 2, 3, 4],
+          y: [3, 5, 1, 7],
+          fill: 'tonexty',
+          type: 'scatter'
+       },
+        ]}
+        layout={ {width: 750, height: 520, title: 'Filled_Area_Plot'} }
+      />
+            <table id="data" class="table table-bordered">
         
         <tbody>
         <tr>
             <th> Title </th>
-            <td> Area chart </td>
+            <td> Filled Area Plot </td>
           </tr>
           <tr>
             <th> Description</th>  
-            <td> Use with care - these are good at showing changes to total, but seeing change in components can be very difficult </td>
+            <td> The shaded area of these charts allows a balance to be shown either against a baseline or between two series.</td>
           </tr>
           <tr>
             <th> Type </th>
-            <td> Scatter </td>
+            <td> Area </td>
           </tr>
           <tr>
             <th> Data Format </th>
@@ -62,7 +62,7 @@ class Area extends Component {
             <th> Trace 1 </th>
             <td> 
             <tr> 
-            x: [1, 2, 3, 4]                             
+            x: [1, 2, 3, 4]                            
             </tr> 
              <tr>  y: [0, 2, 3, 5]
               </tr>
@@ -71,18 +71,9 @@ class Area extends Component {
           <tr>
             <th> Trace 2 </th>
             <td> 
-            <tr>  x: [1, 2, 3, 4]                      
+            <tr>  x: [1, 2, 3, 4]                    
               </tr> 
-             <tr>    y: [3, 5, 4, 7]    
-              </tr>
-             </td>
-          </tr>
-          <tr>
-            <th> Trace 3 </th>
-            <td> 
-            <tr> x: [1, 2, 3, 4]                           
-              </tr> 
-             <tr> y: [4.5, 6, 5.5, 8]      
+             <tr>    y: [3, 5, 1, 7]
               </tr>
              </td>
           </tr>
@@ -97,4 +88,4 @@ class Area extends Component {
     );
   }
 }
-export default Area;
+export default Filled_Area_Plot;

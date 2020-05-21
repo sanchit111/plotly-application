@@ -3,9 +3,10 @@
 import React, { Component } from 'react';
 
 
-import createPlotlyComponent from 'react-plotly.js/factory';
-import "./Pages.css";
 
+import createPlotlyComponent from 'react-plotly.js/factory';
+
+import "./Pages.css";
 
 /* JSON Editor styling */
 
@@ -17,62 +18,56 @@ const Plot = createPlotlyComponent(Plotly);
 
 
 
-class Slope extends Component {
+class Ordered_Bar extends Component {
   render() {
     return (
       <div>
       <Plot className="plot"
         data={[
-           {
-              x: [1, 5],
-              y: [17, 6],
-              type: 'scatter' 
-           },
-           {
-             x: [6, 2],
-             y: [16, 5],
-             type: 'scatter'
-           },
+          {
+           type: 'bar',
+           x: [20, 25, 30],
+           y: ['giraffes', 'orangutans', 'monkeys'],
+           orientation: 'h',
+            // color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)',  'rgb(44, 160, 101)'],
+              },
+          
         ]}
-        layout={ {width: 750, height: 520, title: 'Slope Plot'} }
+        layout={ {width: 750, height: 520, title: 'Ordered Bar'} }
       />
       <table id="data" class="table table-bordered">
         
         <tbody>
         <tr>
             <th> Title </th>
-            <td> Slope  Plot</td>
+            <td> Ordered Bar </td>
           </tr>
           <tr>
             <th> Description</th>  
-            <td> Perfect for showing how ranks have changed over time or vary between categories. </td>
+            <td> Standard bar charts display the ranks of values much more easily when sorted into order.</td>
           </tr>
           <tr>
             <th> Type </th>
-            <td> Scatter </td>
+            <td> Bar </td>
           </tr>
           <tr>
             <th> Data Format </th>
             <td> Array </td>
           </tr>
           <tr>
-            <th> Line 1 </th>
+            <th> Data </th>
             <td> 
-            <tr> x: [1, 5]
+            <tr> x: [20, 25, 30]
             </tr> 
-             <tr> y: [17, 6]
+             <tr> y: ['giraffes', 'orangutans', 'monkeys']
               </tr>
              </td>
           </tr>
-           <tr>
-            <th> Line 2 </th>
-            <td> 
-            <tr> x: [6, 2]
-            </tr> 
-             <tr> y: [16, 5]
-              </tr>
-             </td>
+          <tr>
+            <th> Orientation   </th>
+            <td> h </td>
           </tr>
+          
           
         </tbody>
       </table>
@@ -80,4 +75,5 @@ class Slope extends Component {
     );
   }
 }
-export default Slope;
+
+export default Ordered_Bar;
