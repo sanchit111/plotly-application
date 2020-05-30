@@ -52,28 +52,32 @@ class Filled_Area_Plot extends Component {
           </tr>
           <tr>
             <th> Type </th>
-            <td> Area </td>
+            <td> Scatter </td>
           </tr>
           <tr>
             <th> Data Format </th>
             <td> Array </td>
           </tr>
           <tr>
-            <th> Trace 1 </th>
+            <th> Trace 0 </th>
             <td> 
             <tr> 
             x: [1, 2, 3, 4]                            
             </tr> 
              <tr>  y: [0, 2, 3, 5]
               </tr>
+              <tr>      color: Blue
+              </tr>
              </td>
           </tr>
           <tr>
-            <th> Trace 2 </th>
+            <th> Trace 1 </th>
             <td> 
             <tr>  x: [1, 2, 3, 4]                    
               </tr> 
              <tr>    y: [3, 5, 1, 7]
+              </tr>
+               <tr>       color: Orange
               </tr>
              </td>
           </tr>

@@ -47,32 +47,44 @@ class Paired extends Component {
           </tr>
           <tr>
             <th> Description</th>  
-            <td> Use with care - these are good at showing changes to total, but seeing change in components can be very difficult </td>
+            <td> As per standard column but allows for multiple series. Can become tricky to read wwith more than 2 series. </td>
           </tr>
           <tr>
             <th> Type </th>
-            <td> Scatter </td>
+            <td> Bar </td>
           </tr>
           <tr>
             <th> Data Format </th>
             <td> Array </td>
           </tr>
           <tr>
-            <th> Trace 1 </th>
+            <th> Representation: </th>
+            <td> X axis represents animal name. </td>
+          </tr>
+           <tr>
+            <th>  </th>
+            <td> Y axis represents no. of those animals. </td>
+          </tr>
+          <tr>
+            <th> SF Zoo </th>
             <td> 
             <tr> 
             x: ["giraffes", "orangutans", "monkeys"]                            
             </tr> 
              <tr>  y: [20, 14, 23]
               </tr>
+              <tr>  Color: Blue
+              </tr>
              </td>
           </tr>
           <tr>
-            <th> Trace 2 </th>
+            <th> LA Zoo </th>
             <td> 
             <tr>  x: ["giraffes", "orangutans", "monkeys"]
               </tr> 
              <tr>    y: [12, 18, 29]    
+              </tr>
+               <tr>    Color: Orange    
               </tr>
              </td>
           </tr>

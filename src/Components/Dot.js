@@ -22,30 +22,52 @@ class Dot extends Component {
     return (
       <div>
       <Plot className="plot"
-        data={[
-          {
-            x: [1,2,3,4],
-            y: [1,3,7,6],
-            mode: 'markers',
-            type: 'scatter',
-            marker: {
-             color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)',  'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
-             size: 12 },
-
-        }
+        data={[{
+                 x: [1, 2, 3, 4, 5,6, 7, 8 , 9, 10],
+                 y: [2, 2, 2, null, null,null, 2, 2, 2, 2],
+                 mode: 'markers',
+                 type: 'scatter',
+                 marker:{
+                   size:10
+                 }
+               },
+               { x: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                 y: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+                 mode: 'markers',
+                 type: 'scatter',
+                 marker:{
+                   size:10
+                 }
+               },
+               { x: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                 y: [4, 4, null, 4, 4, 4, 4, null, null, 4],
+                 mode: 'markers',
+                 type: 'scatter',
+                 marker:{
+                   size:10
+                 }
+               },
+               { x: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                 y: [5, 5, 5, 5, 5, null, null, 5, 5, 5],
+                 mode: 'markers',
+                 type: 'scatter',
+                 marker:{
+                   size:10
+                 }
+               }
         ]}
-        layout={ {width: 750, height: 520, title: 'Dot-Plot'} }
+        layout={ {width: 750, height: 520} }
       />
-      <table id="data" class="table table-bordered">
+      <table id="data" >
         
         <tbody>
         <tr>
             <th> Title </th>
-            <td> Ordered Bar </td>
+            <td> Dot Strip Plot </td>
           </tr>
           <tr>
             <th> Description</th>  
-            <td> A simple way of showing the change or range (min,max) of data across multiple categories.</td>
+            <td> Dots placed in order on a strip are a space-efficient method of laying out ranks across multiple categories </td>
           </tr>
           <tr>
             <th> Type </th>
@@ -56,19 +78,45 @@ class Dot extends Component {
             <td> Array </td>
           </tr>
           <tr>
-            <th> Data </th>
+            <th> Mode </th>
+            <td> Markers </td>
+          </tr>
+          <tr>
+            <th> Trace 1 </th>
             <td> 
-            <tr> x: [1,2,3,4]
-            </tr> 
-             <tr> y: [1,3,7,6]
-              </tr>
+            <tr> x: [1, 2, 3, 4, 5,6, 7, 8 , 9, 10]
+                  </tr> 
+             <tr> y: [2, 2, 2, null, null,null, 2, 2, 2, 2]  </tr>
              </td>
           </tr>
           <tr>
-            <th> Marker size   </th>
-            <td> 12 </td>
+            <th> Trace 2 </th>
+            <td> 
+            <tr> x: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                  </tr> 
+             <tr> y: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3]  </tr>
+             </td>
           </tr>
-          
+          <tr>
+            <th> Trace 3 </th>
+            <td> 
+            <tr> x: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                 </tr> 
+             <tr>  y: [4, 4, null, 4, 4, 4, 4, null, null, 4] </tr>
+             </td>
+          </tr>
+          <tr>
+            <th> Trace 4 </th>
+            <td> 
+            <tr> x: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+           </tr> 
+             <tr> y: [5, 5, 5, 5, 5, null, null, 5, 5, 5]  </tr>
+             </td>
+          </tr>
+          <tr>
+            <th> Marker size </th>
+            <td> 10 </td>
+          </tr>
           
         </tbody>
       </table>
@@ -76,4 +124,5 @@ class Dot extends Component {
     );
   }
 }
+
 export default Dot;

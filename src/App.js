@@ -17,9 +17,6 @@ import Frequency_Polygon from "./Components/Frequency_Polygon";
 import Lollipop from "./Components/Lollipop";
 import Violin from "./Components/Violin";
 import Connected_Scatterplot from "./Components/Connected_Scatterplot";
-import Priestley_Timeline from "./Components/Priestley_Timeline";
-import Vertical_Timeline from "./Components/Vertical_Timeline";
-import Streamgraph from "./Components/Streamgraph";
 import Bar from "./Components/Bar";
 import Paired_Bar from "./Components/Paired_Bar";
 import Donut from "./Components/Donut";
@@ -83,7 +80,7 @@ class App extends Component {
          <Link to="/Bump-Chart">Bump-Chart</Link>
        </li>
        <li>
-         <Link to="/Dot-Plot">Dot-Plot</Link>
+         <Link to="/Dot-Strip-Plot">Dot-Strip-Plot</Link>
        </li>
         <li>
          <Link to="/Violin">Violin</Link>
@@ -102,15 +99,6 @@ class App extends Component {
        </li>
        <li>
          <Link to="/Connected-Scatterplot">Connected Scatterplot</Link>
-       </li>
-       <li>
-         <Link to="/Priestley-Timeline">Priestley Timeline</Link>
-       </li>
-       <li>
-         <Link to="/Vertical-Timeline">Vertical Timeline</Link>
-       </li>
-       <li>
-         <Link to="/Streamgraph">Streamgraph</Link>
        </li>
        <li>
          <Link to="/Bar-Graph">Bar</Link>
@@ -134,7 +122,7 @@ class App extends Component {
          <Link to="/Marimekko">Marimekko</Link>
        </li>
        <li>
-         <Link to="/Area-Chart">Area-Chart</Link>
+         <Link to="/Area-Plot">Area-Plot</Link>
        </li>
        <li>
          <Link to="/Paired-Column">Paired-Column</Link>
@@ -164,7 +152,7 @@ class App extends Component {
        <Route path="/Diverging_Grouped_Bar">
           <Diverging_Grouped_Bar />
        </Route>
-        <Route path="/Area-Chart">
+        <Route path="/Area-Plot">
           <Area />
        </Route>
         <Route path="/Paired-Column">
@@ -179,7 +167,7 @@ class App extends Component {
         <Route path="/Slope-Chart">
           <Slope />
        </Route>
-        <Route path="/Dot-Plot">
+        <Route path="/Dot-Strip-Plot">
           <Dot />
           </Route>
        <Route path="/Violin">
@@ -196,15 +184,6 @@ class App extends Component {
        </Route>
         <Route path="/Connected-Scatterplot">
           <Connected_Scatterplot />
-       </Route>
-        <Route path="/Priestley-Timeline">
-          <Priestley_Timeline />
-       </Route>
-        <Route path="/Vertical-Timeline">
-          <Vertical_Timeline />
-       </Route>
-       <Route path="/Streamgraph">
-          <Streamgraph />
        </Route>
         <Route path="/Bar-Graph">
           <Bar />

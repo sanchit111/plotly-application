@@ -36,7 +36,7 @@ class Area extends Component {
               type: "scatter"
             }
         ]}
-        layout={ {width: 750, height: 520, title: 'Area Chart'} }
+        layout={ {width: 750, height: 520, title: 'Area plot'} }
       />
 
        <table id="data" class="table table-bordered">
@@ -44,7 +44,7 @@ class Area extends Component {
         <tbody>
         <tr>
             <th> Title </th>
-            <td> Area chart </td>
+            <td> Area plot </td>
           </tr>
           <tr>
             <th> Description</th>  

@@ -21,6 +21,7 @@ const Plot = createPlotlyComponent(Plotly);
 class Waterfall extends Component {
   render() {
     return (
+      <div>
       <Plot className="plot"
         data={[
           {
@@ -70,6 +71,53 @@ class Waterfall extends Component {
         ]}
         layout={ {width: 750, height: 520, title: 'Waterfall Plot'} }
       />
+      <table id="data" class="table table-bordered">
+        
+        <tbody>
+        <tr>
+            <th> Title </th>
+            <td> Waterfall Plot </td>
+          </tr>
+          <tr>
+            <th> Description</th>  
+            <td> Designed to show the sequencing of data through a flow process, typically budgets. Can include +/- components.</td>
+          </tr>
+          <tr>
+            <th> Type </th>
+            <td> Waterfall </td>
+          </tr>
+          <tr>
+            <th> Data Format </th>
+            <td> Array </td>
+          </tr>
+          <tr>
+            <th> Trace 1 </th>
+            <td> 
+            <tr> 
+            x: [
+                "Sales",
+                "Consulting",
+                "Net revenue",
+                "Purchases",
+                "Other expenses",
+                "Profit before tax"
+            ]                             
+            </tr> 
+             <tr>  y: [
+                60,
+                80,
+                0,
+                -40,
+                -20,
+                0
+            ]
+              </tr>
+             </td>
+          </tr>
+                
+          </tbody>
+      </table> 
+      </div>
     );
   }
 }
